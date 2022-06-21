@@ -1,0 +1,162 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto perritos</title>
+    <link rel="shorcut icon" href="../img/iconpet.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+     <!-- Nav BS -->
+     <nav class="navbar navbar-expand-md navbar-light navcolor" id="botonera">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/logo.png" class="logo" alt="huella" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="opiniones.html">Reseñas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="galeria.html">Galeria</a></li>
+                  <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                  <li><a class="dropdown-item" href="opiniones.html">Reseñas</a></li>
+                  <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--ends nav BS-->
+
+        <div class="contenedor">
+        <!-- Empieza el header -->
+        <header class="header h1">
+            <h1>Contacto</h1>
+            
+        </header>
+        <!-- Empieza el main -->
+        <main class="main">
+            <h4>Si se perdio tu amigo de cuatro patas dejanos toda la info para empezar a buscarlo</h4>s
+            <form action="envio.php" method="post" class="formulario">
+                <fieldset class="casilla">
+                    <legend>Tus datos</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Pepe">
+                    <br>
+                    <br>
+                    <label for="numero">Número de telefono</label>
+                    <input type="number" name="numero" id="numero" placeholder="123456789">
+                    <br>
+                    <br>
+                    <label for="correo">Correo de contacto</label>
+                    <input type="email" name="correo" id="correo" placeholder="ejemplo@perritos.com">
+                </fieldset>
+                <fieldset>
+                    <legend>Datos de la mascota</legend>
+                    <label for="nombre">Su nombre/apodo</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Pepe">
+                    <br>
+                    <br>
+                    <label for="raza">Raza del perro</label>
+                    <select name="raza" id="raza">
+                        <option value="beagle">Beagle</option>
+                        <option value="boxer">Boxer</option>
+                        <option value="bulldog">Bulldog</option>
+                        <option value="callejero">Callejero</option>
+                        <option value="caniche">Caniche Toy</option>
+                        <option value="chihuahua">Chihuahua</option>
+                        <option value="labrador">Labrador</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="lugar">¿Dónde fue visto por última vez?</label>
+                    <input type="text" name="lugar" id="lugar" placeholder="Plaza italia">
+                    <br>
+                    <br>
+                    <p class="chapitaForm">Tu mascota ¿Tiene Chapita identificadora?</p>
+                    <label for="chapita">Sí</label>
+                    <input type="radio" name="chapitasi" id="chapita" value="Si">
+                    <label for="chapita">No</label>
+                    <input type="radio" name="chapitano" id="chapita" value="No">
+                    <br>
+                    <br>
+                    <label for="descripcion">Descripción</label>
+                    <br>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Cancelar">
+                </fieldset>
+            </form>
+            <!-- Empieza el section -->
+            <section>
+                <h2>¿Donde estamos?</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88340.72800465443!2d-58.45511288845062!3d-34.62989651223046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca688994eb61%3A0xd055df0a7dafa86e!2sParque%20Centenario!5e0!3m2!1ses!2sar!4v1652642833780!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+        <aside id="aside" class="filtros">
+            <ul>
+                <li>Callejero (7 )</li>
+                <li>Caniche (10 )</li>
+                <li>Bulldog (1 )</li>
+                <li>Boxer (1 )</li>
+                <li>Labrador (1 )</li>
+                <li>Pitbull (1 )</li>
+                <li>Chihuahua (1 )</li>
+            </ul>
+        </aside>
+         <!-- footer -->
+
+         <footer class="text-center text-white piePagina" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <a href="https://facebook.com" target="_blank">
+                  <img src="../img/fb.png" alt="Seguinos en facebook" class="iconFooter">
+                </a>
+          
+                <a href="https://instagram.com" target="_blank">
+                  <img src="../img/ig.png" alt="Seguinos en instagram" class="iconFooter">
+              </a>
+              </section>
+              <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2022 Copyright: Floripondia
+            </div>
+            <!-- Copyright -->
+          </footer>
+            
+          <!--ends footer-->
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+</body>
+</html>
