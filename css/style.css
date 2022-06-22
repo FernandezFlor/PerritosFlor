@@ -210,6 +210,15 @@ h4{
     background-color: rgba(0, 0, 0, 0.363);
 }
 
+.card{
+    text-align: center;
+    background-color: transparent;
+}
+
+.cardbg{
+    background-color: transparent;
+    border-color: transparent;
+}
 .card-block{
     background-color: #ec8fca21;
     text-align: center;
@@ -217,6 +226,7 @@ h4{
 }
 .btn{
     background: linear-gradient(to top,rgb(168, 48, 138) , rgb(90, 31, 63));
+    border-color: transparent;
 }
 .btn:hover{
     background: linear-gradient(to top, rgb(90, 31, 63), rgb(168, 48, 138));

@@ -57,59 +57,58 @@
         </header>
         <!-- Empieza el main -->
         <main class="main">
-            <h4>Si se perdio tu amigo de cuatro patas dejanos toda la info para empezar a buscarlo</h4>s
-            <form action="envio.php" method="post" class="formulario">
-                <fieldset class="casilla">
-                    <legend>Tus datos</legend>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Pepe">
-                    <br>
-                    <br>
-                    <label for="numero">Número de telefono</label>
-                    <input type="number" name="numero" id="numero" placeholder="123456789">
-                    <br>
-                    <br>
-                    <label for="correo">Correo de contacto</label>
-                    <input type="email" name="correo" id="correo" placeholder="ejemplo@perritos.com">
-                </fieldset>
-                <fieldset>
-                    <legend>Datos de la mascota</legend>
-                    <label for="nombre">Su nombre/apodo</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Pepe">
-                    <br>
-                    <br>
-                    <label for="raza">Raza del perro</label>
-                    <select name="raza" id="raza">
-                        <option value="beagle">Beagle</option>
-                        <option value="boxer">Boxer</option>
-                        <option value="bulldog">Bulldog</option>
-                        <option value="callejero">Callejero</option>
-                        <option value="caniche">Caniche Toy</option>
-                        <option value="chihuahua">Chihuahua</option>
-                        <option value="labrador">Labrador</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label for="lugar">¿Dónde fue visto por última vez?</label>
-                    <input type="text" name="lugar" id="lugar" placeholder="Plaza italia">
-                    <br>
-                    <br>
-                    <p class="chapitaForm">Tu mascota ¿Tiene Chapita identificadora?</p>
-                    <label for="chapita">Sí</label>
-                    <input type="radio" name="chapitasi" id="chapita" value="Si">
-                    <label for="chapita">No</label>
-                    <input type="radio" name="chapitano" id="chapita" value="No">
-                    <br>
-                    <br>
-                    <label for="descripcion">Descripción</label>
-                    <br>
-                    <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
-                    <br>
-                    <br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Cancelar">
-                </fieldset>
+            <h4>Si se perdio tu amigo de cuatro patas dejanos toda la info para empezar a buscarlo</h4>
+
+
+            <form class="formulario">
+              <legend>Tus datos</legend>
+              <div class="row mb-3">
+                <label for="inputText3" class="col-sm-2 col-form-label">Nombre y apellido</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputText3">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Correo electronico</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="inputEmail3">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputNumber3" class="col-sm-2 col-form-label">Número de telefono</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="inputNumber3">
+                </div>
+              </div>
+              <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Tu mascota ¿Tiene chapita identificadora?</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Si
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="row mb-3">
+                <label for="textArea3" class="col-sm-2 col-form-label">Descripción y datos para encontrarlo:</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" id="textArea3"cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
+
+
+
+            
             <!-- Empieza el section -->
             <section>
                 <h2>¿Donde estamos?</h2>
@@ -129,7 +128,7 @@
         </aside>
          <!-- footer -->
 
-         <footer class="text-center text-white piePagina" style="background-color: #f1f1f1;">
+         <footer class="text-center text-white piePagina" style="background-color: #ef8af894;"
             <!-- Grid container -->
             <div class="container pt-4">
               <!-- Section: Social media -->
